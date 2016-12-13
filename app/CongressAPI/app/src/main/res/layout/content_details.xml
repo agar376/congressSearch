@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="80dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shobhitagarwal.congressapi.Details"
+    tools:showIn="@layout/activity_details">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/favLeg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/grey_star" />
+
+                <ImageView
+                    android:id="@+id/fbLeg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/f" />
+
+                <ImageView
+                    android:id="@+id/twLeg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/t" />
+
+                <ImageView
+                    android:id="@+id/webLeg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/w" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="60dp">
+
+                <ImageView
+                    android:id="@+id/legImg"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/chamberImg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:id="@+id/chamberText"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TableLayout
+                        android:id="@+id/legTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/n"
+                                android:layout_width="100dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="Name:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+                                android:layout_weight=".52"
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/e"
+                                android:layout_width="100dp"
+                                android:layout_column="1"
+
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="Email:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+                                android:layout_weight=".52"
+                                android:gravity="right"
+                                android:text="N.A."
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/c"
+                                android:layout_width="150dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+
+                                android:gravity="left"
+                                android:text="Chamber:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/chamber"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+                                android:layout_weight=".52"
+
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/ct"
+                                android:layout_width="100dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="Contact:"
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/contact"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+                                android:layout_weight=".52"
+
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/st"
+                                android:layout_width="200dp"
+                                android:layout_column="1"
+
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="Start Term:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/start_term"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+
+                                android:layout_weight=".52"
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/et"
+                                android:layout_width="50dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="End Term:"
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/end_term"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+                                android:layout_weight=".52"
+
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/t"
+                                android:layout_width="50dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+
+                                android:text="Term:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/relativeProgress"
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.52"
+                                android:gravity="right">
+
+                                <ProgressBar
+                                    android:id="@+id/term"
+                                    style="@android:style/Widget.ProgressBar.Horizontal"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".52"
+                                    android:gravity="right"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:maxHeight="20dp"
+                                    android:minHeight="20dp" />
+
+                                <TextView
+                                    android:id="@+id/progress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@id/term"
+                                    android:layout_alignLeft="@id/term"
+                                    android:layout_alignRight="@id/term"
+                                    android:layout_alignTop="@id/term"
+                                    android:layout_margin="1dp"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center" />
+                            </RelativeLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/o"
+                                android:layout_width="30dp"
+                                android:layout_column="1"
+                                 android:layout_weight=".40"
+
+                                android:gravity="left"
+                                android:paddingBottom="10dp"
+                                android:paddingTop="10dp"
+                                android:text="Office:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/office"
+                                android:layout_width="50dp"
+                                android:layout_height="60dp"
+                                android:layout_column="2"
+                                android:layout_weight=".60"
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/s"
+                                android:layout_width="50dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="State:"
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/state"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+
+                                android:layout_weight=".52"
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/f"
+                                android:layout_width="50dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="Fax:"
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fax"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+
+                                android:layout_weight=".52"
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:weightSum="1.0">
+
+                            <TextView
+                                android:id="@+id/b"
+                                android:layout_width="50dp"
+                                android:layout_column="1"
+                                android:layout_weight=".48"
+                                android:gravity="left"
+                                android:text="Birthday:"
+
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000"
+                                
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/birthday"
+                                android:layout_width="50dp"
+                                android:layout_column="2"
+
+                                android:layout_weight=".52"
+                                android:gravity="right"
+                                android:text="N.A."
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#3C3C3C"
+                                 />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

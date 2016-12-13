@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CongressAPI</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="owner">Shobhit Agarwal</string>
+    <string name="uscId">6473476393</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_committee_details">CommitteeDetails</string>
+    <string name="title_activity_bill_details">BillDetails</string>
+</resources>
